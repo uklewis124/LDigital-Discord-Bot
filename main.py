@@ -6,6 +6,9 @@ import requests
 import discord
 import asyncio
 import aioping
+import dotenv
+
+dotenv.load_dotenv(dotenv.find_dotenv())
 
 INTENTS = discord.Intents.all()
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
